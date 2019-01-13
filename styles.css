@@ -1,0 +1,227 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+/* Use font-family: 'font name', serif; 
+font-family: 'IBM Plex Serif', serif; (for h1 and h2)
+font-family: 'Domine', serif; (for <p>)
+font-family: 'IBM Plex Sans'; (for the links)
+*/
+@import url('https://fonts.googleapis.com/css?family=Domine|IBM+Plex+Sans|IBM+Plex+Serif');
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  line-height: 100%;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.5em;
+  color: #000000;
+}
+
+.nav{
+  order: -1;
+  padding: 1em;
+  background: rgb(245, 245, 245);
+  display: inline;
+  margin: 5px;
+}
+
+ul{
+    background: #ffffff;
+    justify-content: space-evenly;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    list-style-type: none;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+
+.main{
+display: flex;
+flex-direction: column;
+  padding-top: -1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin: 0px 10px;
+  flex:1 0 auto;
+  background: rgb(187,179,135);
+  text-align: center;
+  width: 80%
+}
+
+.aside{
+    padding: 1em;
+    flex:1 0 auto;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    width: 40%;
+  }
+
+.asideleft{
+  padding: 1em;
+  background: rgb(255, 255, 255);
+  border-right: 2px solid grey;
+  width: 20%;
+  visibility: hidden;
+}
+
+.asideright{
+    padding: 1em;
+    background: rgb(255, 255, 255);
+    border-left: 1px solid grey;
+    width: 20%;
+    visibility: hidden;
+  }
+
+.footer{
+    padding: 1em;
+    background: rgb(27,83,110);
+    font-family: 'Merriweather';
+    font-size: 15px;
+    text-align: center;
+}
+
+/* For desktops and larger resolutions */
+@media  screen and (max-width: 2048px) {
+    body{
+        background-color: white;
+    }
+    .nav {
+        display: block;
+    }
+    .wrapper {
+        flex-direction: row;
+    }
+    .main {
+        width: 50%
+    }
+    .aside {
+        width: 20%;
+    }
+  }
+
+  /* For desktops  */
+@media  screen and (max-width: 1500px) {
+  body{
+        background-color: rgb(194, 194, 194);
+  }
+  .nav {
+        display: block;
+  }
+  .wrapper {
+    flex-direction: row;
+  }
+  .main {
+    flex: 1 1 auto;
+  }
+  .aside {
+    width: 35%;
+  }
+  .asideleft{
+    display: none;
+  }
+  .asideright{
+    display: none;
+  }
+}
+
+
+/* For tablet devices */
+@media  screen and (max-width: 900px) {
+  
+  body {
+        background-color: rgb(87, 87, 87);
+  }
+  .wrapper {
+    flex-direction: row;
+  }
+  .main {
+    flex: 1 1 auto;
+    width: 50%;
+  }
+  .aside {
+    width: 25%;
+  }
+  .asideleft{
+    display: none;
+  }
+  .asideright{
+    display: none;
+}
+
+/* For mobile devices */
+@media  screen and (max-width: 600px) {
+  body{
+      background-color: rgb(22, 22, 22);
+  }
+  a{
+      line-height: 210%;
+  }
+  .asideleft{
+    display: none;
+  }
+  .wrapper {
+    flex-direction: column;
+  }
+  .main {
+    width:90%;
+  }
+  .aside {
+    clear: both;
+    width: 95%;
+  }
+  .asideright{
+    display: none;
+  }}
+}
+
+h1 {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 64px;
+  line-height: 80%;
+  
+}
+
+a{
+    font-family: 'IBM Plex Sans';
+    text-decoration: none;
+    
+    border-bottom: 1px solid grey;
+    justify-content: stretch;
+    background-color: white;
+    color: black;
+}
+
+
+a:hover, a:active{
+    font-family: 'IBM Plex Sans';
+    text-decoration: none;
+    
+    justify-content: stretch;
+    background-color:black;
+    color: white;
+}
+
+h2 {
+    font-family: 'IBM Plex Serif', serif;
+    line-height: 100%;
+    text-align: left;
+}
+
+p {
+    text-align: left;
+    font-family: 'Domine', serif;
+    font-size: 20px;
+}
+
+img.wrapper{
+  float: left;
+}
